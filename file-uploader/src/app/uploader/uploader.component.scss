@@ -1,81 +1,75 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2em;
-  }
-  
-  h1 {
-    font-size: 2em;
-    margin-bottom: 1em;
-    color: #4a90e2;
-  }
-  
-  .upload-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2em;
-    border: 2px dashed #4a90e2;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  .upload-label {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    margin-bottom: 1em;
-  }
-  
-  .material-icons {
-    font-size: 36px;
-    color: #4a90e2;
-  }
-  
-  .file-name {
-    font-size: 1.2em;
-    color: #333;
-  }
-  
-  /* Add some transitions for smoothness */
-  .upload-label, .file-name {
-    transition: all 0.3s ease;
-  }
-  
-  /* Hover state */
-  .upload-label:hover {
-    color: white;
-    background-color: #4a90e2;
-    border-radius: 8px;
-    padding: 10px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  margin-top: 50px;  /* Move the box down */
+  background: #f8f9fa;  /* Light background */
+}
 
-  
-  .button-container {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .send-button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .send-button:hover {
-    background-color: #45a049;
-  }
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 1em;
+  color: #007bff;  /* Changed color for freshness */
+}
 
+.upload-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  border: 3px dashed #007bff;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Added box shadow */
+}
 
-  /* ...your existing styles... */
+.upload-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 1em;
+}
+
+.material-icons {
+  font-size: 36px;
+  color: #007bff;
+}
+
+.file-name {
+  font-size: 1.2em;
+  color: #333;
+  margin-top: 10px;  /* Added margin-top */
+}
+
+.upload-label, .file-name {
+  transition: all 0.3s ease;
+}
+
+.upload-label:hover {
+  color: white;
+  background-color: #007bff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.send-button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;  /* Rounded corners */
+}
+
+.send-button:hover {
+  background-color: #218838;
+}
 
 .message-container {
   margin-top: 20px;
@@ -83,15 +77,12 @@
 }
 
 .upload-message {
-  font-size: 1.5em;  /* Make text larger */
-  font-weight: bold; /* Make text bold */
+  font-size: 1.5em;
+  font-weight: bold;
   padding: 10px;
   border-radius: 5px;
   display: inline-block;
 }
-
-/* If you're using Angular or another framework that can dynamically add classes,
-you could toggle these for different upload statuses */
 
 .upload-message.success {
   color: green;
@@ -107,5 +98,7 @@ you could toggle these for different upload statuses */
   color: blue;
   background-color: #e8e8ff;
 }
-
-  
+.material-icons {
+  font-size: 98px;  /* Increase the font size to make the icon larger */
+  color: #007bff;
+}

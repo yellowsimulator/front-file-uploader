@@ -27,6 +27,7 @@ import { LoginComponent } from './login/login.component';
 import { UploaderComponent } from './uploader/uploader.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UploadedFilesComponent } from './uploaded-files/uploaded-files.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppComponent,
     LoginComponent,
     UploaderComponent,
-    NavigationComponent
+    NavigationComponent,
+    UploadedFilesComponent
   ],
   imports: [
     HttpClientModule,

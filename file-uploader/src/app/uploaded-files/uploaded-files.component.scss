@@ -1,0 +1,53 @@
+.file-list-container {
+    background-color: #f7f9fc;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    margin: 2em;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #007bff;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .file-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .file-table th, .file-table td {
+    padding: 12px 20px;
+    border-bottom: 2px solid #f3f4f6;
+  }
+  
+  .file-table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .file-table tr:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .download-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #28a745;
+    font-size: 24px;
+  }
+  
+  .material-icons {
+    font-size: 24px;
+    vertical-align: middle;
+  }
+  
+  .download-button:hover {
+    color: #218838;
+  }
+  

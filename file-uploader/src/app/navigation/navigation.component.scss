@@ -87,22 +87,52 @@ p {
 
 /* ... rest of the CSS stays the same ... */
 
+// nav a {
+//   color: white;
+//   text-decoration: none;
+//   margin-right: 10px;
+// }
+
+// nav a:hover {
+//   color: lightgray;
+// }
+
 nav a {
   color: white;
   text-decoration: none;
-  margin-right: 10px;
+  margin-right: 20px;  /* Increased from 10px to 20px for better spacing */
+  padding: 5px 10px;
+  border-radius: 3px;
 }
+
 
 nav a:hover {
   color: lightgray;
+  background-color: rgba(255, 255, 255, 0.2);  /* Added background highlight */
 }
-
 
 .toolbar {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  background-color: #4CAF50;  /* Updated background color */
+  background-image: linear-gradient(to right, #4CAF50, #81C784);  /* Added gradient */
+  color: white;
+  font-weight: 600;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Added shadow */
+  z-index: 1000;  
 }
+// .toolbar {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
 
 .toolbar-left,
 .toolbar-title,

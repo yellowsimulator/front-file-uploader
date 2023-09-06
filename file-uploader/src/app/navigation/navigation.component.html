@@ -1,4 +1,3 @@
-<!-- Toolbar -->
 <div class="toolbar" role="banner">
   <div class="toolbar-left">
     <img width="40" alt="" src="" />
@@ -9,13 +8,10 @@
     </div>
   </div>
 
-  <div class="toolbar-title">
-    <h1>Proprty.ai Cloud Files Uploader</h1>
-  </div>
-
   <div class="toolbar-right">
-    <nav>
-        
+    <nav class="centered-nav">
+        <a routerLink="/uploader" routerLinkActive="active">Home</a>
+        <a routerLink="/uploaded-files" routerLinkActive="active">Uploaded Files</a>
         <a routerLink="/login" (click)="logOut()" routerLinkActive="active">Logout</a>
     </nav>
   </div>

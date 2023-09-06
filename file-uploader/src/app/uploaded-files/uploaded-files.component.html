@@ -1,0 +1,27 @@
+<p>uploaded-files works!</p>
+<div class="file-list-container">
+    <h1>File List</h1>
+    <table class="file-table">
+      <thead>
+        <tr>
+          <th>Uploaded By</th>
+          <th>File Name</th>
+          <th>Date</th>
+          <th>Download</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let file of files">
+          <td>{{ file.uploadedBy }}</td>
+          <td>{{ file.fileName }}</td>
+          <td>{{ file.date | date:'mediumDate' }}</td>
+          <td>
+            <button class="download-button" (click)="downloadFile(file.fileName)">
+              <i class="material-icons">get_app</i>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
