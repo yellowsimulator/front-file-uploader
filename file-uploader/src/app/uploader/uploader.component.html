@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>File Upload</h1>
+  <div *ngIf="isLoading" class="spinner" style="margin: auto;">
+    <!-- Your spinner here -->
+    Loading...
+  </div>
+  <div class="upload-box">
+    <input type="file" (change)="onFilesSelected($event)" multiple id="fileInput" hidden>
+    <label for="fileInput" class="upload-label">
+      <i class="material-icons">cloud_upload</i>
+      <span>Choose Files</span>
+    </label>
+    <p class="file-name" *ngFor="let fileName of fileNames">{{ fileName }}</p>
+    <button class="send-button" (click)="onSend()" *ngIf="fileNames.length > 0">Send</button>
+  </div>
+  <div class="message-container" *ngIf="uploadMessage">
+    <p class="upload-message">{{ uploadMessage }}</p>
+  </div>
+</div>

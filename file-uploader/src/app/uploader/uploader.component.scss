@@ -1,0 +1,111 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #4a90e2;
+  }
+  
+  .upload-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    border: 2px dashed #4a90e2;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .upload-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 1em;
+  }
+  
+  .material-icons {
+    font-size: 36px;
+    color: #4a90e2;
+  }
+  
+  .file-name {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  /* Add some transitions for smoothness */
+  .upload-label, .file-name {
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover state */
+  .upload-label:hover {
+    color: white;
+    background-color: #4a90e2;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .send-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .send-button:hover {
+    background-color: #45a049;
+  }
+
+
+  /* ...your existing styles... */
+
+.message-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.upload-message {
+  font-size: 1.5em;  /* Make text larger */
+  font-weight: bold; /* Make text bold */
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* If you're using Angular or another framework that can dynamically add classes,
+you could toggle these for different upload statuses */
+
+.upload-message.success {
+  color: green;
+  background-color: #e8ffe8;
+}
+
+.upload-message.error {
+  color: red;
+  background-color: #ffe8e8;
+}
+
+.upload-message.in-progress {
+  color: blue;
+  background-color: #e8e8ff;
+}
+
+  
